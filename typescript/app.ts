@@ -1,5 +1,5 @@
 let ola = (nome: string, sobrenome: string) => {
-    console.log(`Ola ` + nome + ' ' + sobrenome);
+    console.log('Olá ' + nome + ' ' + sobrenome);
 }
 
 ola('iuri', 'galdino')

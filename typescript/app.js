@@ -1,6 +1,6 @@
 "use strict";
 var ola = function (nome, sobrenome) {
-    console.log("Ola " + nome + ' ' + sobrenome);
+    console.log('Olá ' + nome + ' ' + sobrenome);
 };
 ola('iuri', 'galdino');
 var mensagem = "Seja Bem Vindo!!";
