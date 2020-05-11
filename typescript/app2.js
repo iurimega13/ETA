@@ -17,16 +17,35 @@ var Carro = /** @class */ (function () {
     };
     return Carro;
 }());
-var concessionaria = /** @class */ (function () {
-    function concessionaria(endereco, listaDeCarros) {
+var Concessionaria = /** @class */ (function () {
+    function Concessionaria(endereco, listaDeCarros) {
         this.endereco = endereco;
         this.listaDeCarros = listaDeCarros;
     }
-    concessionaria.prototype.forneceerEndereco = function () {
+    Concessionaria.prototype.forneceerEndereco = function () {
         return this.endereco;
     };
-    concessionaria.prototype.mostrarListaDeCarros = function () {
+    Concessionaria.prototype.mostrarListaDeCarros = function () {
         return this.listaDeCarros;
     };
-    return concessionaria;
+    return Concessionaria;
+}());
+var Pessoa = /** @class */ (function () {
+    function Pessoa(nome, carroPreferido) {
+        this.nome = nome;
+        this.carroPreferido = carroPreferido;
+    }
+    Pessoa.prototype.dizerNome = function () {
+        return this.nome;
+    };
+    Pessoa.prototype.dizerCarroPreferido = function () {
+        return this.carroPreferido;
+    };
+    Pessoa.prototype.dizerCarroQueTem = function () {
+        return this.carro;
+    };
+    Pessoa.prototype.comprarCarro = function (carro) {
+        this.carro = carro;
+    };
+    return Pessoa;
 }());
