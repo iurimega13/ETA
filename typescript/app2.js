@@ -17,6 +17,19 @@ var Carro = /** @class */ (function () {
     };
     return Carro;
 }());
+var concessionaria = /** @class */ (function () {
+    function concessionaria(endereco, listaDeCarros) {
+        this.endereco = endereco;
+        this.listaDeCarros = listaDeCarros;
+    }
+    concessionaria.prototype.forneceerEndereco = function () {
+        return this.endereco;
+    };
+    concessionaria.prototype.mostrarListaDeCarros = function () {
+        return this.listaDeCarros;
+    };
+    return concessionaria;
+}());
 var carroA = new Carro('camaro', 2);
 console.log(carroA);
 carroA.acelerar();
