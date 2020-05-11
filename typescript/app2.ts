@@ -25,7 +25,7 @@ class Carro {
 
 class concessionaria {
     private endereco: string
-    private listaDeCarros: string[]
+    private listaDeCarros: any
 
     constructor(endereco: string, listaDeCarros: string[]) {
         this.endereco = endereco
@@ -36,14 +36,7 @@ class concessionaria {
         return this.endereco
     }
 
-    public mostrarListaDeCarros(): string[] {
+    public mostrarListaDeCarros(): any {
         return this.listaDeCarros
     }
 }
-let carroA = new Carro('camaro', 2)
-console.log(carroA);
-carroA.acelerar()
-console.log(carroA);
-carroA.parar()
-console.log(carroA);
-
