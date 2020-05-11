@@ -30,9 +30,3 @@ var concessionaria = /** @class */ (function () {
     };
     return concessionaria;
 }());
-var carroA = new Carro('camaro', 2);
-console.log(carroA);
-carroA.acelerar();
-console.log(carroA);
-carroA.parar();
-console.log(carroA);
