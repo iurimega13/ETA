@@ -57,3 +57,7 @@ var carro2 = new Carro('golf', 2);
 var carro3 = new Carro('hilux', 4);
 var carro4 = new Carro('sw4', 4);
 var carro5 = new Carro('dodge RAM', 2);
+/**
+ * Criando lista de carros da concessionaria
+ */
+var listaDeCarros = [carro1, carro2, carro3, carro4, carro5];

@@ -72,3 +72,9 @@ const carro2 = new Carro('golf',2)
 const carro3 = new Carro('hilux',4)   
 const carro4 = new Carro('sw4',4)   
 const carro5 = new Carro('dodge RAM',2)
+
+/**
+ * Criando lista de carros da concessionaria
+ */
+
+let listaDeCarros: Carro[] = [carro1, carro2, carro3, carro4, carro5]
