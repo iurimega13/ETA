@@ -25,9 +25,9 @@ class Carro {
 
 class Concessionaria {
     private endereco: string
-    private listaDeCarros: any
+    private listaDeCarros: Array<Carro>
 
-    constructor(endereco: string, listaDeCarros: string[]) {
+    constructor(endereco: string, listaDeCarros: Array<Carro>) {
         this.endereco = endereco
         this.listaDeCarros = listaDeCarros
     }
@@ -36,7 +36,7 @@ class Concessionaria {
         return this.endereco
     }
 
-    public mostrarListaDeCarros(): any {
+    public mostrarListaDeCarros(): Array<Carro> {
         return this.listaDeCarros
     }
 }
@@ -78,3 +78,11 @@ const carro5 = new Carro('dodge RAM',2)
  */
 
 let listaDeCarros: Carro[] = [carro1, carro2, carro3, carro4, carro5]
+
+/**
+ * Criando concessionaria pra receber lista de carros
+ */
+
+ let concessionaria = new Concessionaria('parnaiba', listaDeCarros)
+ console.log(concessionaria.mostrarListaDeCarros);
+ 

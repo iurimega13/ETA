@@ -61,3 +61,8 @@ var carro5 = new Carro('dodge RAM', 2);
  * Criando lista de carros da concessionaria
  */
 var listaDeCarros = [carro1, carro2, carro3, carro4, carro5];
+/**
+ * Criando concessionaria pra receber lista de carros
+ */
+var concessionaria = new Concessionaria('parnaiba', listaDeCarros);
+console.log(concessionaria.mostrarListaDeCarros);
