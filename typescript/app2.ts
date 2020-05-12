@@ -84,5 +84,5 @@ let listaDeCarros: Carro[] = [carro1, carro2, carro3, carro4, carro5]
  */
 
  let concessionaria = new Concessionaria('parnaiba', listaDeCarros)
- console.log(concessionaria.mostrarListaDeCarros);
+ console.log(concessionaria.mostrarListaDeCarros());
  
