@@ -44,7 +44,7 @@ class Concessionaria {
 class Pessoa {
     private nome: string
     private carroPreferido: string
-    private carro: any
+    private carro: Carro
 
     constructor(nome: string, carroPreferido: string) {
         this.nome = nome
@@ -57,21 +57,21 @@ class Pessoa {
     public dizerCarroPreferido(): string {
         return this.carroPreferido
     }
-    public dizerCarroQueTem(): any {
+    public dizerCarroQueTem(): Carro {
         return this.carro
     }
-    public comprarCarro(carro: any): void {
+    public comprarCarro(carro: Carro): void {
         this.carro = carro
     }
 }
 /**
  * Criando carros
  */
-const carro1 = new Carro('gol',4)   
-const carro2 = new Carro('golf',2)   
-const carro3 = new Carro('hilux',4)   
-const carro4 = new Carro('sw4',4)   
-const carro5 = new Carro('dodge RAM',2)
+const carro1 = new Carro('gol', 4)
+const carro2 = new Carro('golf', 2)
+const carro3 = new Carro('hilux', 4)
+const carro4 = new Carro('sw4', 4)
+const carro5 = new Carro('dodge RAM', 2)
 
 /**
  * Criando lista de carros da concessionaria
@@ -83,6 +83,33 @@ let listaDeCarros: Carro[] = [carro1, carro2, carro3, carro4, carro5]
  * Criando concessionaria pra receber lista de carros
  */
 
- let concessionaria = new Concessionaria('parnaiba', listaDeCarros)
- console.log(concessionaria.mostrarListaDeCarros());
+let concessionaria = new Concessionaria('parnaiba', listaDeCarros)
+/**
+ * teste do array
+ */
+//console.log(concessionaria.mostrarListaDeCarros()); 
+
+/**
+ * Definindo carro preferido do cliente
+*/
+
+let cliente = new Pessoa('iuri', 'golf')
+
+
+/**
+ * Mapeando lista de carros
+*/
+
+concessionaria.mostrarListaDeCarros().map((carro: Carro) => {
+    if ( carro['modelo'] == cliente.dizerCarroPreferido()) {
+        // Comprar o carro
+        cliente.comprarCarro(carro)
+    }
+})
+
+/**
+ * Exibindo carro do cliente
+*/
+
+ console.log(cliente.dizerCarroQueTem());
  

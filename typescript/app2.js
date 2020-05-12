@@ -65,4 +65,24 @@ var listaDeCarros = [carro1, carro2, carro3, carro4, carro5];
  * Criando concessionaria pra receber lista de carros
  */
 var concessionaria = new Concessionaria('parnaiba', listaDeCarros);
-console.log(concessionaria.mostrarListaDeCarros());
+/**
+ * teste do array
+ */
+//console.log(concessionaria.mostrarListaDeCarros()); 
+/**
+ * Definindo carro preferido do cliente
+*/
+var cliente = new Pessoa('iuri', 'golf');
+/**
+ * Mapeando lista de carros
+*/
+concessionaria.mostrarListaDeCarros().map(function (carro) {
+    if (carro['modelo'] == cliente.dizerCarroPreferido()) {
+        // Comprar o carro
+        cliente.comprarCarro(carro);
+    }
+});
+/**
+ * Exibindo carro do cliente
+*/
+console.log(cliente.dizerCarroQueTem());
