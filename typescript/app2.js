@@ -49,3 +49,11 @@ var Pessoa = /** @class */ (function () {
     };
     return Pessoa;
 }());
+/**
+ * Criando carros
+ */
+var carro1 = new Carro('gol', 4);
+var carro2 = new Carro('golf', 2);
+var carro3 = new Carro('hilux', 4);
+var carro4 = new Carro('sw4', 4);
+var carro5 = new Carro('dodge RAM', 2);

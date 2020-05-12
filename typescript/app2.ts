@@ -64,3 +64,11 @@ class Pessoa {
         this.carro = carro
     }
 }
+/**
+ * Criando carros
+ */
+const carro1 = new Carro('gol',4)   
+const carro2 = new Carro('golf',2)   
+const carro3 = new Carro('hilux',4)   
+const carro4 = new Carro('sw4',4)   
+const carro5 = new Carro('dodge RAM',2)
