@@ -44,7 +44,7 @@ class Concessionaria {
 class Pessoa {
     private nome: string
     private carroPreferido: string
-    private carro: Carro
+    private carro!: Carro
 
     constructor(nome: string, carroPreferido: string) {
         this.nome = nome
